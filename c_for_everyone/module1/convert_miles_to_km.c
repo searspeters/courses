@@ -7,10 +7,11 @@ Aug 21, 2024
 
 int main(void)
 {
-    int miles = 26, yards = 385;
+    int miles, yards;
     double kilometers;
-
+    printf("Please input miles followed by yards as integers.\n");
+    scanf("%d%d", &miles, &yards);
     kilometers = 1.609 * (miles + yards / 1760.0);
-    printf("\nA marathon is %lf kilometers.\n\n", kilometers);
+    printf("\n%d miles and %d yards equals %lf kilometers.\n\n", miles, yards, kilometers);
     return 0;
 }
