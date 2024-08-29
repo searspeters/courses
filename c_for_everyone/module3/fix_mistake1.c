@@ -7,7 +7,7 @@ int main(void)
    for(i = -10; i < 30; i++)
    {
       interval = i/10.0;
-      printf("sin( %lf ) = %lf \t", interval, sin(interval)>0 ? sin(interval), -1*sin(interval));
+      printf("sin( %lf ) = %lf \t", interval, sin(interval)>0 ? sin(interval): fabs(sin(interval)));
    }
    printf("\n+++++++\n");
    return 0;
